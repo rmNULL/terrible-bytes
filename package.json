@@ -1,0 +1,34 @@
+{
+  "name": "terrible-bytes",
+  "version": "0.1.0",
+  "description": "Convey byte size information in a human friendly format. e.g: b`42 MB`",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmnull/terrible-bytes.js.git"
+  },
+  "keywords": [
+    "byte",
+    "bytes",
+    "pretty",
+    "human-readable",
+    "human",
+    "readable",
+    "iec",
+    "si",
+    "size",
+    "filesize"
+  ],
+  "author": "rmnull",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmnull/terrible-bytes.js/issues"
+  },
+  "homepage": "https://github.com/rmnull/terrible-bytes.js#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
