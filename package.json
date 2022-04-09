@@ -4,6 +4,7 @@
   "description": "Convey byte size information in a human friendly format. e.g: b`42 MB`",
   "main": "src/index.js",
   "scripts": {
+    "prepare": "npm version patch -m 'Tag v%s [skip ci]'",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
