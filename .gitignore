@@ -12,3 +12,6 @@
 !src/
 !src/**/
 !src/**/*.js
+!tests
+!tests/**/
+!tests/**/*.js
