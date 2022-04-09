@@ -3,7 +3,7 @@
 
 !.gitignore
 !.editorconfig
-!README
+!README.md
 !LICENSE
 
 !.npmrc
