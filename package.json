@@ -2,7 +2,7 @@
   "name": "terrible-bytes",
   "version": "0.1.0",
   "description": "Convey byte size information in a human friendly format. e.g: b`42 MB`",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
