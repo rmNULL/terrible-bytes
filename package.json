@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rmnull/terrible-bytes.js.git"
+    "url": "git+https://github.com/rmnull/terrible-bytes.git"
   },
   "keywords": [
     "byte",
@@ -26,9 +26,9 @@
   "author": "rmnull",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rmnull/terrible-bytes.js/issues"
+    "url": "https://github.com/rmnull/terrible-bytes/issues"
   },
-  "homepage": "https://github.com/rmnull/terrible-bytes.js#readme",
+  "homepage": "https://github.com/rmnull/terrible-bytes#readme",
   "devDependencies": {
     "jest": "^27.5.1"
   },
