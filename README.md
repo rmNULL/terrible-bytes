@@ -1,39 +1,45 @@
-# Terrible-Bytes
-Convey size information in human friendly format to your js runtime.
+# Terrible-Bytes 🍰
+Convey size information in human friendly format to your js runtime.  
 Bid adieu to those numbers without units.
 
 # Simple to use, Easy to Understand
 ```javascript
 import {b} from 'terrible-bytes';
 
-// convert 8 Megabytes into bytes
 const uploadLimitBytes = b`8MB`
-const someotherthingBytes = b`5G` + b`640M` // approx. 5.64Gigabytes
-const altsomeotherthingBytes = b`5.64G`       // you could have also specified it this way
+const xInBytes = b`5G` + b`640M` // approx. 5.64Gigabytes
+const yInBytes = b`5.64G`       // approximately similar to above
+
+```
+## Interpolation Support
+```javascript
+const filesize = 256;
+const unit = 'MiB';
+
+const lol = b`${filesize}${unit}`;
+const xox = b`468 ${unit}`;
 ```
 
-Ye get rid of those KB, MB, GB constants and please let's just stop doing `size=8*MB`
+Let's get rid of those KB, MB, GB constants.  
+And please, let's just stop doing `size=8*MB`
 
 # Supported Units
-Only S.I and ISO/IEC standard unit prefixes are allowed.
-In the case of K we make an exception and treat it as kilobyte.
+Only **S.I** and **ISO/IEC** standard unit prefixes are allowed.  
+In the case of **K** we make an exception and treat it as kilobyte.  
 However, a warning is consoled when K is provided as the unit.
 
 The ISO and IEC table are given below for the sake of convenience,
 Apart from the values in the table, 'B' can exist to mean byte.
 Here are some valid strings, to give an example
-e.g:
-`` b`4` ``
-`` b`4B`  ``
-`` b`4M` ``
-`` b`4MB` ``
-``b`4Mi` ``
-``b`4MiB` ``
+e.g: 
+```javascript
+[ b`4`, b`4B`, b`4M`, b`4MB`, b`4Mi`, b`4MiB` ]
+```
 
 
 
-| Value            | SI Unit   |
-|------------------|---|-------|
+| Value            |  SI Unit|  |
+|------------------|:---:|-------|
 | 1000             | k | kilo  |
 | 1000<sup>2</sup> | M | mega  |
 | 1000<sup>3</sup> | G | giga  |
@@ -44,7 +50,7 @@ e.g:
 | 1000<sup>8</sup> | Y | yotta |
 
 
-| Value            | IEC Unit   |
+| Value            | IEC| Unit   |
 |------------------|----|-------|
 | 1000             | Ki | kibi  |
 | 1000<sup>2</sup> | Mi | mebi  |
