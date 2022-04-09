@@ -1,4 +1,3 @@
-// the legacy units are not supported
 // we stick strictly to SI and IEC units
 // however in the case of kilobyte we make an exception and
 // treat both k and K as kilobyte. however a warning is consoled
@@ -28,7 +27,7 @@ function as_bytes(raw_string) {
 
 function b(vs, rf, rs) {
   if (vs.length > 3)
-    throw new TypeError('Overwhelmed: you have included more variables than we can handle, time to cry');
+    throw new TypeError("Overwhelmed: you have included more variables than we can handle. :'(");
 
   const resolved_str = [vs[0], rf, vs[1], rs, vs[2]].filter(v => v)
                                                     .map(s => String(s).trim())
@@ -37,4 +36,7 @@ function b(vs, rf, rs) {
   return as_bytes(resolved_str);
 }
 
-export default b;
+
+export {
+  b
+}
