@@ -1,0 +1,14 @@
+*
+**/*
+
+!.gitignore
+!.editorconfig
+!README
+!LICENSE
+
+!.npmrc
+!package.json
+
+!src/
+!src/**/
+!src/**/*.js
