@@ -1,4 +1,4 @@
-import b from '.';
+import {b} from '..';
 
 test('empty', () => {
   expect(_ => b``).toThrow(TypeError);
