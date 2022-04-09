@@ -1,6 +1,6 @@
 {
   "name": "terrible-bytes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convey byte size information in a human friendly format. e.g: b`42 MB`",
   "main": "src/index.js",
   "scripts": {
